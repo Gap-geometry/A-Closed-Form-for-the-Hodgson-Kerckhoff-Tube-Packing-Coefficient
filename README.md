@@ -2,4 +2,4 @@ The numerical constant 0.980258 used in the tube-packing bound of Hodgson & Kerc
 
 
 Gap Geometry — https://gap-geometry.github.io/sqrt2-ln2-geometric-constants-/about.html
-OSF: osf.io/zx4g7
+OSF: osf.io/zx4g7 
