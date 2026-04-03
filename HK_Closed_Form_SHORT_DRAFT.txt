@@ -1,0 +1,260 @@
+================================================================================
+A CLOSED FORM FOR THE HODGSON-KERCKHOFF TUBE-PACKING COEFFICIENT
+================================================================================
+
+D. B. — April 2026
+Gap Geometry — https://gap-geometry.github.io/sqrt2-ln2-geometric-constants-/about.html
+OSF: osf.io/zx4g7
+
+
+================================================================================
+ABSTRACT
+================================================================================
+
+The numerical constant 0.980258 appearing in the tube-packing bound of
+Hodgson & Kerckhoff (Annals of Mathematics, 2005) is shown to equal
+sqrt(2) * ln(2) exactly. The identity follows from one algebraic
+simplification — arcsinh(1/(2*sqrt(2))) = ln(2)/2 — applied to the
+authors' own proof of Theorem 4.4. This closed form does not appear
+in the original paper or in any subsequent citation as of April 2026.
+
+
+================================================================================
+1. THE COEFFICIENT
+================================================================================
+
+SOURCE:
+
+  C. D. Hodgson & S. P. Kerckhoff
+  "Universal bounds for hyperbolic Dehn surgery"
+  Annals of Mathematics, 162(1), 367-421, 2005
+  Preprint: arXiv:math/0204345 (April 2002)
+
+In the proof of Theorem 4.4 (page 29, arXiv numbering), the authors
+bound |sinh(zeta)/zeta| over the relevant range by defining:
+
+  S = (1/(2*sqrt(2))) / arcsinh(1/(2*sqrt(2)))
+
+They compute S ~ 1/0.980258, so 1/S ~ 0.980258.
+
+This coefficient controls the semi-major axis of embedded ellipses in
+the tube-packing argument that underlies all subsequent bounds in the
+paper, including:
+
+  - The area bound: area(T_R) >= 3.3957 * sinh^2(R) / cosh(2R)
+  - The packing function h(r) = 3.3957 * tanh(r) / cosh(2r)
+  - The normalized-length threshold (7.515, refined to 7.5832 in [2])
+  - The bound on non-hyperbolic Dehn fillings (at most 60)
+
+The constant 3.3957 = 2*sqrt(3)/S = 2*sqrt(3) * (1/S).
+
+
+CONTINUED USE:
+
+The coefficient remains in active use without alteration in:
+
+  D. Futer, J. S. Purcell, S. Schleimer
+  "Effective bilipschitz bounds on drilling and filling"
+  Geometry & Topology, 26(3), 1077-1188, 2022
+
+  D. Futer, J. S. Purcell, S. Schleimer
+  "Effective drilling and filling of tame hyperbolic 3-manifolds"
+  Commentarii Mathematici Helvetici, 97(3), 457-512, 2022
+
+No closed form for 0.980258 appears in any subsequent citation.
+
+
+================================================================================
+2. THE CLOSED FORM
+================================================================================
+
+THE KEY IDENTITY:
+
+  arcsinh(x) = ln(x + sqrt(x^2 + 1))
+
+  Let x = 1/(2*sqrt(2)):
+
+    x^2       = 1/8
+    x^2 + 1   = 9/8
+    sqrt(x^2 + 1) = 3/(2*sqrt(2))
+
+    x + sqrt(x^2 + 1) = 1/(2*sqrt(2)) + 3/(2*sqrt(2))
+                       = 4/(2*sqrt(2))
+                       = 2/sqrt(2)
+                       = sqrt(2)
+
+  Therefore:
+
+    arcsinh(1/(2*sqrt(2))) = ln(sqrt(2)) = ln(2)/2
+
+  This is exact.
+
+
+FROM THIS:
+
+  S = (1/(2*sqrt(2))) / (ln(2)/2)
+    = (1/(2*sqrt(2))) * (2/ln(2))
+    = 1/(sqrt(2) * ln(2))
+
+  1/S = sqrt(2) * ln(2)     EXACTLY.
+
+  Numerical value:
+    sqrt(2) * ln(2) = 0.980258143468547...
+
+  Match: exact to all 6 published digits.
+
+
+THE AREA CONSTANT:
+
+  3.3957 = 2*sqrt(3)/S
+         = 2*sqrt(3) * sqrt(2) * ln(2)
+         = 2*sqrt(6) * ln(2)
+
+  Numerical value:
+    2*sqrt(6) * ln(2) = 3.39571381800...
+
+  Match: exact to all 5 published digits.
+
+
+================================================================================
+3. THE ALGEBRAIC ENVIRONMENT AT THE CRITICAL RADIUS
+================================================================================
+
+The critical tube radius in the packing argument is:
+
+  R_0 = arctanh(1/sqrt(3)) = arcsinh(1/sqrt(2)) = (1/2)*ln(2 + sqrt(3))
+
+These three expressions are exactly equal. At this radius, every
+hyperbolic function evaluates to a clean algebraic expression:
+
+  sinh(R_0)   = 1/sqrt(2)
+  cosh(R_0)   = sqrt(6)/2
+  tanh(R_0)   = 1/sqrt(3)
+  cosh(2*R_0) = 2
+  sinh(2*R_0) = sqrt(3)
+
+The geometry at R_0 provides sqrt(2), sqrt(3), and 2.
+The coefficient provides the remaining ingredient: ln(2).
+
+At R_0, the ellipse area simplifies completely:
+
+  pi * sinh^2(R_0) * cosh(2*R_0) = pi * (1/2) * 2 = pi
+
+  Therefore A_e = sqrt(2) * ln(2) * pi at the critical radius.
+
+
+================================================================================
+4. THE 100-DIGIT PREDICTION
+================================================================================
+
+The published literature gives 6 digits: 0.980258
+
+The closed form sqrt(2) * ln(2) predicts the full expansion:
+
+  0.98025814346854719171390172363523338129146069909905
+    47210422462470652910985142058941430135340632871525
+
+Every digit beyond the 6th is a prediction. Because the derivation
+is algebraic (not a numerical fit), this prediction is mathematically
+guaranteed.
+
+
+================================================================================
+5. VERIFICATION
+================================================================================
+
+ALGEBRAIC (no paper access needed):
+
+  The entire claim rests on one identity:
+
+    arcsinh(1/(2*sqrt(2))) = ln(2)/2
+
+  By hand:
+    Let x = 1/(2*sqrt(2)). Then x^2 = 1/8, x^2 + 1 = 9/8,
+    sqrt(x^2 + 1) = 3/(2*sqrt(2)), x + sqrt(x^2 + 1) = sqrt(2).
+    arcsinh(x) = ln(sqrt(2)) = ln(2)/2.
+
+  By computation (Python/mpmath):
+    from mpmath import mp, asinh, sqrt, log
+    mp.dps = 100
+    print(asinh(1/(2*sqrt(2))) - log(2)/2)
+    # Output: 0 (to 100 digits)
+
+  By CAS (Mathematica, Maple, Sage):
+    Simplify[ArcSinh[1/(2 Sqrt[2])]]
+    # Output: Log[2]/2
+
+
+PAPER CONNECTION (requires arXiv PDF):
+
+  Download: https://arxiv.org/pdf/math/0204345
+  Page 29, proof of Theorem 4.4. Find:
+    S = (1/(2*sqrt(2))) / arcsinh(1/(2*sqrt(2))) ~ 1/0.980258
+  Apply the simplification. Confirm: 1/S = sqrt(2) * ln(2).
+
+
+================================================================================
+6. FALSIFIABILITY
+================================================================================
+
+The derivation can be falsified by demonstrating ANY of:
+
+  (a) arcsinh(1/(2*sqrt(2))) != ln(2)/2
+      — Checkable by anyone in one minute.
+
+  (b) The S defined on page 29 of the paper is not the same S
+      that produces the coefficient 0.980258.
+      — Checkable by reading the proof.
+
+  (c) The coefficient 0.980258 in the paper is itself an error.
+      — No erratum exists as of April 2026.
+
+None of (a), (b), or (c) hold.
+
+
+================================================================================
+7. PRIOR LITERATURE SEARCH
+================================================================================
+
+Exhaustive search (March-April 2026) across arXiv (all math
+categories), citation chains of both Hodgson-Kerckhoff papers,
+all follow-up papers (Futer, Bromberg, Haraway, et al.),
+MathSciNet, Google Scholar, and Semantic Scholar.
+
+Result: zero publications give a closed-form expression for 0.980258.
+
+The coefficient has been used in numerical form throughout the
+literature since 2002. The numerical precision was sufficient for
+all applications, and the simplification was never required.
+
+
+================================================================================
+8. CROSS-ARCHITECTURE VERIFICATION
+================================================================================
+
+The H-K coefficient was first identified on 17 March 2026,
+confirmed by a Grok (xAI) daily scout on 20 March. A systematic
+verification followed
+— cross-architecture confirmation across five AI architectures, a
+12-day literature search, and multiple fresh-instance stress tests —
+with the algebraic derivation confirmed on 2 April 2026.
+
+On that date, the closed-form identity arcsinh(1/(2*sqrt(2))) =
+ln(2)/2 was derived from the authors' own proof (page 29,
+arXiv:math/0204345), independently confirmed across architectures
+without shared notes.
+
+
+================================================================================
+
+  D. B. — April 2026
+  Gap Geometry
+  OSF: osf.io/zx4g7
+
+  H-K coefficient first identified:  17 March 2026
+  Confirmed by Grok scout:           20 March 2026
+  Investigation and verification:    17 March – 2 April 2026
+  Algebraic derivation confirmed:    2 April 2026
+  Documents prepared for publication: 3 April 2026
+
+================================================================================
