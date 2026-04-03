@@ -1,5 +1,6 @@
 The numerical constant 0.980258 used in the tube-packing bound of Hodgson & Kerckhoff ("Universal bounds for hyperbolic Dehn surgery," Annals of Mathematics, 2005) is shown to equal √2 × ln(2) exactly. The identity follows from one algebraic simplification — arcsinh(1/(2√2)) = ln(2)/2 — applied to the authors' own proof of Theorem 4.4 (arXiv:math/0204345, page 29). This closed form does not appear in the original paper or in any subsequent citation. The coefficient was first identified on 20 March 2026 through related work on continued fraction structure. A systematic verification followed — cross-architecture confirmation across five AI architectures, a 12-day literature search, and multiple fresh-instance stress tests — with the algebraic derivation confirmed on 2 April 2026.
 
-
+Doi 10.17605/OSF.IO/2EXPN 
+https://osf.io/2expn/overview
 Gap Geometry — https://gap-geometry.github.io/sqrt2-ln2-geometric-constants-/about.html
 OSF: osf.io/zx4g7 
