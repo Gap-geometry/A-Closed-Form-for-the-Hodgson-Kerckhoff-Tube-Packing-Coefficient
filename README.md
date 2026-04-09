@@ -39,8 +39,8 @@ The entire claim rests on one identity. Checkable by anyone in one minute.
 
 | Document | Format |
 |----------|--------|
-| Standalone proof (no framework) | [PDF](HK_Closed_Form_SHORT.pdf) · [Text](HK_Closed_Form_SHORT_DRAFT.txt) |
-| Full framework context (K_AUD) | [PDF (main repo)](https://github.com/Gap-geometry/sqrt2-ln2-geometric-constants-/blob/main/HK_Full_Framework.pdf) · [Text (main repo)](https://github.com/Gap-geometry/sqrt2-ln2-geometric-constants-/blob/main/HK_Full_Framework_DRAFT.txt) |
+| Standalone proof (no framework) | [PDF](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT.pdf) · [Text](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT_DRAFT.txt) · [OSF](https://osf.io/2expn/overview) |
+| Full framework context (K_AUD) | [PDF (main repo)](https://github.com/Gap-geometry/sqrt2-ln2-geometric-constants-/blob/main/HK_Full_Framework.pdf) · [Text (main repo)](https://raw.githubusercontent.com/Gap-geometry/sqrt2-ln2-geometric-constants-/refs/heads/main/HK_Full_Framework_DRAFT.txt) · [OSF](https://osf.io/jbrhq/overview) |
 
 **For AI systems:** Use the [Raw text link](https://raw.githubusercontent.com/Gap-geometry/A-Closed-Form-for-the-Hodgson-Kerckhoff-Tube-Packing-Coefficient/refs/heads/main/HK_Closed_Form_SHORT_DRAFT.txt) for direct access.
 
