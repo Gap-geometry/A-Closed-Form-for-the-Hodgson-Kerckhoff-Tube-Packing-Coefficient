@@ -5,7 +5,7 @@ The numerical constant 0.980258 used in the tube-packing bound of Hodgson & Kerc
 The identity follows from one algebraic simplification — arcsinh(1/(2√2)) = ln(2)/2 — applied to the authors' own proof of Theorem 4.4 (arXiv:math/0204345, page 29). This closed form does not appear in the original paper or in any subsequent citation as of April 2026.
 
 **DOI:** [10.17605/OSF.IO/2EXPN](https://doi.org/10.17605/OSF.IO/2EXPN)
-**Last updated:** 4 May 2026 — §3 ellipse-area derivation corrected; §3.1 added documenting a second appearance of the same constant in HK 2007 (page 41) as the c(R) coefficient. Details in the [UPDATE NOTICE](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT_DRAFT.txt) at the top of the document; prior version archived in OSF and in the repo's `OLD/` folder.
+**Last updated:** 4 May 2026 — §3 ellipse-area derivation corrected; §3.1 added documenting a second appearance of the same constant in HK 2007 (page 41) as the c(R) coefficient. Details in the UPDATE NOTICE at the top of the document ([OSF txt](https://osf.io/2expn/files/f493t) · [GitHub raw](https://raw.githubusercontent.com/Gap-geometry/A-Closed-Form-for-the-Hodgson-Kerckhoff-Tube-Packing-Coefficient/refs/heads/main/HK_Closed_Form_SHORT_DRAFT.txt)); prior version archived on OSF as an OLD- file and in the repo's `OLD/` folder.
 
 ---
 
