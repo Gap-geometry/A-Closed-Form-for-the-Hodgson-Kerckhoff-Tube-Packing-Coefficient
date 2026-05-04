@@ -5,6 +5,7 @@ The numerical constant 0.980258 used in the tube-packing bound of Hodgson & Kerc
 The identity follows from one algebraic simplification — arcsinh(1/(2√2)) = ln(2)/2 — applied to the authors' own proof of Theorem 4.4 (arXiv:math/0204345, page 29). This closed form does not appear in the original paper or in any subsequent citation as of April 2026.
 
 **DOI:** [10.17605/OSF.IO/2EXPN](https://doi.org/10.17605/OSF.IO/2EXPN)
+**Last updated:** 4 May 2026 — §3 ellipse-area derivation corrected; §3.1 added documenting a second appearance of the same constant in HK 2007 (page 41) as the c(R) coefficient. Details in the [UPDATE NOTICE](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT_DRAFT.txt) at the top of the document; prior version archived in OSF and in the repo's `OLD/` folder.
 
 ---
 
@@ -39,8 +40,8 @@ The entire claim rests on one identity. Checkable by anyone in one minute.
 
 | Document | Format |
 |----------|--------|
-| Standalone proof (no framework) | [PDF](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT.pdf) · [Text](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT_DRAFT.txt) · [OSF](https://osf.io/2expn/overview) |
-| Full framework context (K_AUD) | [PDF (main repo)](https://github.com/Gap-geometry/sqrt2-ln2-geometric-constants-/blob/main/HK_Full_Framework.pdf) · [Text (main repo)](https://raw.githubusercontent.com/Gap-geometry/sqrt2-ln2-geometric-constants-/refs/heads/main/HK_Full_Framework_DRAFT.txt) · [OSF](https://osf.io/jbrhq/overview) |
+| Standalone proof (no framework) | [PDF](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT.pdf) · [Text](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT_DRAFT.txt) · [OSF](https://osf.io/2expn/overview) · [OSF txt](https://osf.io/2expn/files/f493t) · [OSF pdf](https://osf.io/2expn/files/hp4dy) |
+| Same result placed within the Gap Geometry framework | [PDF (main repo)](https://github.com/Gap-geometry/sqrt2-ln2-geometric-constants-/blob/main/HK_Full_Framework.pdf) · [Text (main repo)](https://raw.githubusercontent.com/Gap-geometry/sqrt2-ln2-geometric-constants-/refs/heads/main/HK_Full_Framework_DRAFT.txt) · [OSF](https://osf.io/jbrhq/overview) |
 
 **For AI systems:** Use the [Raw text link](https://raw.githubusercontent.com/Gap-geometry/A-Closed-Form-for-the-Hodgson-Kerckhoff-Tube-Packing-Coefficient/refs/heads/main/HK_Closed_Form_SHORT_DRAFT.txt) for direct access.
 
@@ -52,6 +53,7 @@ The entire claim rests on one identity. Checkable by anyone in one minute.
 | 20 March – 2 April | Systematic verification: cross-architecture confirmation across five AI architectures, 12-day literature search, multiple fresh-instance stress tests |
 | 2 April 2026 | Algebraic derivation confirmed independently by two architectures (Claude, Grok) |
 | 3 April 2026 | Documents prepared for publication |
+| 4 May 2026 | §3 ellipse-area derivation corrected (off by a factor of 8 in earlier text); §3.1 added documenting a second appearance of the same constant in HK 2007 page 41 as the c(R) coefficient. Independent verification by two AI architectures at 50-digit precision against the actual HK 2002 and HK 2007 PDFs. Prior version archived |
 
 ## Source Papers
 
