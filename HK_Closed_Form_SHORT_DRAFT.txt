@@ -2,10 +2,62 @@
 A CLOSED FORM FOR THE HODGSON-KERCKHOFF TUBE-PACKING COEFFICIENT
 ================================================================================
 
-D. B. — April 2026
+D. B. — April 2026 (updated 4 May 2026)
 Gap Geometry — https://gap-geometry.github.io/sqrt2-ln2-geometric-constants-/about.html
 OSF: osf.io/zx4g7
 
+
+
+
+================================================================================
+                    ★  UPDATE NOTICE  —  4 May 2026  ★
+================================================================================
+
+Section 3 has been corrected and a new Section 3.1 added.
+
+(1) §3 ELLIPSE AREA CORRECTION
+
+The earlier text contained the line:
+
+    "At R_0, the ellipse area simplifies completely:
+     pi * sinh^2(R_0) * cosh(2*R_0) = pi * (1/2) * 2 = pi
+     Therefore A_e = sqrt(2) * ln(2) * pi at the critical radius."
+
+This was a misderivation. Hodgson-Kerckhoff's actual ellipse area
+formula (HK 2002 Theorem 4.4 p. 29; HK 2007 Theorem 5.6 p. 36) is:
+
+    A_e = pi * sinh^2(R_hat) / (2 * S * cosh(2 * R_hat))
+        = sqrt(2) * ln(2) * pi * sinh^2(R_hat) / (2 * cosh(2 * R_hat))
+
+since 1/S = sqrt(2) * ln(2). At R_0 this gives sqrt(2) * ln(2) * pi / 8,
+not sqrt(2) * ln(2) * pi. The conclusion in the earlier text was off by
+a factor of 8.
+
+The error originated in a transcription of HK 2007 that dropped the
+factor of 2 in the denominator and was carried into the rewrite. Both
+HK papers (math/0204345v1.pdf and 0709.3566v1.pdf) confirm the
+corrected formula independently.
+
+§3 has been rewritten with HK's actual formula and the
+sqrt(2) * ln(2) * pi / 8 conclusion. The structural argument and the
+central closed-form identity 1/S = sqrt(2) * ln(2) are unchanged and
+unaffected.
+
+(2) §3.1 NEW — SECOND APPEARANCE OF sqrt(2) * ln(2) IN HK 2007
+
+A new subsection §3.1 documents that the same numerical constant
+0.980258 also appears as the coefficient of the Euclidean injectivity
+radius lower bound c(R) = 0.980258 / (coth R + 1) on page 41 of
+HK 2007. Two independent contexts in the same paper, both unrecognized
+as sqrt(2) * ln(2) for nineteen years.
+
+ARCHIVED PRIOR VERSION
+
+Prior published version archived as
+OLD-2026-05-04_HK_Closed_Form_SHORT_DRAFT.txt and
+OLD-2026-05-04_HK_Closed_Form_SHORT.pdf in OLD/ subfolder.
+
+================================================================================
 
 ================================================================================
 ABSTRACT
@@ -136,11 +188,39 @@ hyperbolic function evaluates to a clean algebraic expression:
 The geometry at R_0 provides sqrt(2), sqrt(3), and 2.
 The coefficient provides the remaining ingredient: ln(2).
 
-At R_0, the ellipse area simplifies completely:
+HK 2002 (Theorem 4.4, p. 29) and HK 2007 (Theorem 5.6, p. 36) both give
+the ellipse area in the packing argument as:
 
-  pi * sinh^2(R_0) * cosh(2*R_0) = pi * (1/2) * 2 = pi
+  A_e = pi * a * b = pi * sinh^2(R_hat) / (2 * S * cosh(2 * R_hat))
+      = sqrt(2) * ln(2) * pi * sinh^2(R_hat) / (2 * cosh(2 * R_hat))
 
-  Therefore A_e = sqrt(2) * ln(2) * pi at the critical radius.
+since 1/S = sqrt(2) * ln(2). At R_0, where sinh^2(R_0) = 1/2 and
+cosh(2 * R_0) = 2:
+
+  A_e = sqrt(2) * ln(2) * pi * (1/2) / (2 * 2) = sqrt(2) * ln(2) * pi / 8
+
+The closed-form coefficient enters the area formula because S governs
+the semi-major axis of the embedded ellipse (HK 2007, eq. above
+Theorem 5.6). The geometry at R_0 contributes the residual factor 1/8;
+the prefactor sqrt(2) * ln(2) is what HK's coefficient is.
+
+
+================================================================================
+3.1 SECOND APPEARANCE OF sqrt(2) * ln(2) IN HK 2007
+================================================================================
+
+The same numerical constant 0.980258 appears in a second, independent
+quantity in HK 2007 (p. 41):
+
+  c(R) = 0.980258 / (coth R + 1)
+
+c(R) is a lower bound for the Euclidean injectivity radius of the
+boundary torus T_i. No closed form is supplied. The closed-form
+identification 0.980258 = sqrt(2) * ln(2) applies here too.
+
+Two independent contexts in the same paper, both using 0.980258 as the
+explicit numerical coefficient, both unrecognized as sqrt(2) * ln(2)
+for nineteen years.
 
 
 ================================================================================
@@ -258,3 +338,4 @@ without shared notes.
   Documents prepared for publication: 3 April 2026
 
 ================================================================================
+
