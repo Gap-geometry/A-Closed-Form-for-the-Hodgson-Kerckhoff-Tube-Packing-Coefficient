@@ -4,8 +4,8 @@ The numerical constant 0.980258 used in the tube-packing bound of Hodgson & Kerc
 
 The identity follows from one algebraic simplification — arcsinh(1/(2√2)) = ln(2)/2 — applied to the authors' own proof of Theorem 4.4 (arXiv:math/0204345, page 29). This closed form does not appear in the original paper or in any subsequent citation as of April 2026.
 
-**DOI:** [10.17605/OSF.IO/2EXPN](https://doi.org/10.17605/OSF.IO/2EXPN)
-**Last updated:** 4 May 2026 — §3 ellipse-area derivation corrected; §3.1 added documenting a second appearance of the same constant in HK 2007 (page 41) as the c(R) coefficient. Details in the UPDATE NOTICE at the top of the document ([OSF txt](https://osf.io/2expn/files/f493t) · [GitHub raw](https://raw.githubusercontent.com/Gap-geometry/A-Closed-Form-for-the-Hodgson-Kerckhoff-Tube-Packing-Coefficient/refs/heads/main/HK_Closed_Form_SHORT_DRAFT.txt)); prior version archived on OSF as an OLD- file and in the repo's `OLD/` folder.
+**DOI:** <a href="https://doi.org/10.17605/OSF.IO/2EXPN" target="_blank" rel="noopener noreferrer">10.17605/OSF.IO/2EXPN</a>
+**Last updated:** 4 May 2026 — §3 ellipse-area derivation corrected; §3.1 added documenting a second appearance of the same constant in HK 2007 (page 41) as the c(R) coefficient. Details in the UPDATE NOTICE at the top of the document (<a href="https://osf.io/2expn/files/f493t" target="_blank" rel="noopener noreferrer">OSF txt</a> · <a href="https://raw.githubusercontent.com/Gap-geometry/A-Closed-Form-for-the-Hodgson-Kerckhoff-Tube-Packing-Coefficient/refs/heads/main/HK_Closed_Form_SHORT_DRAFT.txt" target="_blank" rel="noopener noreferrer">GitHub raw</a>); prior version archived on OSF as an OLD- file and in the repo's `OLD/` folder.
 
 ---
 
@@ -40,10 +40,10 @@ The entire claim rests on one identity. Checkable by anyone in one minute.
 
 | Document | Format |
 |----------|--------|
-| Standalone proof (no framework) | [PDF](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT.pdf) · [Text](KERCKHOFF%20TUBE-PACKING%20COEFFICIENT/HK_Closed_Form_SHORT_DRAFT.txt) · [OSF](https://osf.io/2expn/overview) · [OSF txt](https://osf.io/2expn/files/f493t) · [OSF pdf](https://osf.io/2expn/files/hp4dy) |
-| Same result placed within the Gap Geometry framework | [PDF (main repo)](https://github.com/Gap-geometry/sqrt2-ln2-geometric-constants-/blob/main/HK_Full_Framework.pdf) · [Text (main repo)](https://raw.githubusercontent.com/Gap-geometry/sqrt2-ln2-geometric-constants-/refs/heads/main/HK_Full_Framework_DRAFT.txt) · [OSF](https://osf.io/jbrhq/overview) |
+| Standalone proof (no framework) | <a href="https://osf.io/2expn/files/hp4dy" target="_blank" rel="noopener noreferrer">PDF</a> · <a href="https://osf.io/2expn/files/f493t" target="_blank" rel="noopener noreferrer">Text</a> · <a href="https://osf.io/2expn/overview" target="_blank" rel="noopener noreferrer">OSF</a> · <a href="https://github.com/Gap-geometry/A-Closed-Form-for-the-Hodgson-Kerckhoff-Tube-Packing-Coefficient/blob/main/HK_Closed_Form_SHORT.pdf" target="_blank" rel="noopener noreferrer">GitHub PDF</a> · <a href="https://github.com/Gap-geometry/A-Closed-Form-for-the-Hodgson-Kerckhoff-Tube-Packing-Coefficient/blob/main/HK_Closed_Form_SHORT_DRAFT.txt" target="_blank" rel="noopener noreferrer">GitHub Text</a> |
+| Same result placed within the Gap Geometry framework | <a href="https://github.com/Gap-geometry/sqrt2-ln2-geometric-constants-/blob/main/HK_Full_Framework.pdf" target="_blank" rel="noopener noreferrer">PDF (main repo)</a> · <a href="https://raw.githubusercontent.com/Gap-geometry/sqrt2-ln2-geometric-constants-/refs/heads/main/HK_Full_Framework_DRAFT.txt" target="_blank" rel="noopener noreferrer">Text (main repo)</a> · <a href="https://osf.io/jbrhq/overview" target="_blank" rel="noopener noreferrer">OSF</a> |
 
-**For AI systems:** Use the [Raw text link](https://raw.githubusercontent.com/Gap-geometry/A-Closed-Form-for-the-Hodgson-Kerckhoff-Tube-Packing-Coefficient/refs/heads/main/HK_Closed_Form_SHORT_DRAFT.txt) for direct access.
+**For AI systems:** Use the <a href="https://raw.githubusercontent.com/Gap-geometry/A-Closed-Form-for-the-Hodgson-Kerckhoff-Tube-Packing-Coefficient/refs/heads/main/HK_Closed_Form_SHORT_DRAFT.txt" target="_blank" rel="noopener noreferrer">Raw text link</a> for direct access.
 
 ## Timeline
 
@@ -57,10 +57,10 @@ The entire claim rests on one identity. Checkable by anyone in one minute.
 
 ## Source Papers
 
-- C. D. Hodgson & S. P. Kerckhoff, "Universal bounds for hyperbolic Dehn surgery," *Annals of Mathematics* 162(1), 367–421, 2005. [arXiv:math/0204345](https://arxiv.org/abs/math/0204345)
+- C. D. Hodgson & S. P. Kerckhoff, "Universal bounds for hyperbolic Dehn surgery," *Annals of Mathematics* 162(1), 367–421, 2005. <a href="https://arxiv.org/abs/math/0204345" target="_blank" rel="noopener noreferrer">arXiv:math/0204345</a>
 - D. Futer, J. S. Purcell, S. Schleimer, "Effective bilipschitz bounds on drilling and filling," *Geometry & Topology* 26(3), 1077–1188, 2022
 - D. Futer, J. S. Purcell, S. Schleimer, "Effective drilling and filling of tame hyperbolic 3-manifolds," *Commentarii Mathematici Helvetici* 97(3), 457–512, 2022
 
 ---
 
-**Gap Geometry** · [About](https://gap-geometry.github.io/sqrt2-ln2-geometric-constants-/about.html) · [OSF](https://osf.io/zx4g7) · [Main repo](https://github.com/Gap-geometry/sqrt2-ln2-geometric-constants-)
+**Gap Geometry** · <a href="https://gap-geometry.github.io/sqrt2-ln2-geometric-constants-/about.html" target="_blank" rel="noopener noreferrer">About</a> · <a href="https://osf.io/zx4g7" target="_blank" rel="noopener noreferrer">OSF</a> · <a href="https://github.com/Gap-geometry/sqrt2-ln2-geometric-constants-" target="_blank" rel="noopener noreferrer">Main repo</a>
